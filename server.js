@@ -11,13 +11,13 @@ server.use('/api/posts', DataRouter);
 server.get('/', (req, res) => {
   res.send(
     `<h2>Lambda Posts</h>
-    <p>Welcome to Lambda Posts!</p>
+    <p>Welcome to the Lambda Posts!</p>
   `);
 });
 
 server.get('*', (req, res) => {
   res.status(404).send(`
-  <h2>Page Not Found :/</h>
+  <h2> Page Not Found :/ </h>
 `)
 });
 
